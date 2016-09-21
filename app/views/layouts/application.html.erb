@@ -3,14 +3,19 @@
   <head>
     <title>Sampleapp</title>
     <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= link_to"home",root_path%>
-    <%= link_to"about",about_path%>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+
+
+     <div class="container">
+
+      <%= yield %>
+     </div>
   </body>
 </html>
