@@ -1,11 +1,11 @@
 @import url(https://fonts.google.com/?query=lato&selection.family=Lato);
-$body-bg: #3498db;
+$body-bg: white;
 $navbar-default-bg:black;
-$navbar-default-link-color:#3498db;
-$navbar-default-link-hover-color:white;
+$navbar-inverse-link-color:#3498db;
+$navbar-inverse-link-hover-color:white;
 $navbar-default-brand-hover-color:white;
 $brand-primary:green;
-
+$jumbotron-bg: #bdc3c7;
 @import 'bootstrap';
 .center {
   text-align:center;
