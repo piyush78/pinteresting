@@ -27,7 +27,7 @@ class PinsController < ApplicationController
          redirect_to @pin, notice: 'Pin was successfully created.'
       #  format.json { render :show, status: :created, location: @pin }
       else
-        render action: 'new'
+        render  :new
       #  format.json { render json: @pin.errors, status: :unprocessable_entity }
       end
   #  end
@@ -39,7 +39,7 @@ class PinsController < ApplicationController
          redirect_to @pin, notice: 'Pin was successfully updated.'
       #  format.json { render :show, status: :ok, location: @pin }
       else
-         render action: 'edit'
+         render :edit
       #  format.json { render json: @pin.errors, status: :unprocessable_entity }
       end
   #  end
@@ -64,6 +64,6 @@ class PinsController < ApplicationController
      end
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit(:description)
+      params.require(:pin).permit(:description, :image)
     end
 end
