@@ -24,8 +24,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 gem 'devise', '~> 4.2'
-gem 'paperclip', '~> 4.2'
-gem 'aws-sdk', '~> 2.5', '>= 2.5.10'
+gem 'paperclip', '~> 5.0.0'
+gem 'aws-sdk', '~> 2.5'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
